@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<style>
+	.DIV1 {
+ 	 border: 10px solid black;
+ 	 border-radius: 12px;
+ 	 background: lightgrey;
+ 	 margin: auto;
+ 	 text-align: center;
+	}
+
+	.DIV2 {
+ 	 border: 10px solid black;
+ 	 border-radius: 12px;
+ 	 background: darkgray;
+ 	 text-align: center;
+	}
+
+		.DIV3 {
+ 	 border: 10px solid black;
+ 	 border-radius: 12px;
+ 	 background: dimgray;
+ 	 text-align: center;
+	}
+
+	.CLASS4 {
+ 	 border: 10px solid black;
+ 	 border-radius: 12px;
+ 	 background: dimgray;
+	 text-align: center;
+	}
+
+	.FIXED_CREDS {
+ 	 border: 10px solid black;
+ 	 border-radius: 12px;
+ 	 background: darkseagreen;
+	 text-align: right;
+	 position: fixed;
+	 right: 0;
+	}
+
+	</style>
+	<title>Gambling Site</title>
+	</head>
+		<div class="FIXED_CREDS">
+		<h1 id="Money">
+		</h1>
+		</div>
+
+		<div class="DIV1">
+		<body style="background-color:gray;">
+		<h1>
+		<img src="https://gamblingz.000webhostapp.com/Images/SCREM_COIN.png" />
+		Long Term HTML game
+		<img src="https://gamblingz.000webhostapp.com/Images/SKELE_COIN.png" />
+		</h1>
+		
+		<p title="Secret Tool Tip">
+		<img src="https://gamblingz.000webhostapp.com/Images/CHERRY.png" />
+		My game is bad, don't play it.
+		<img src="https://gamblingz.000webhostapp.com/Images/CHERRY.png" />
+		</h2>
+
+		<h1>
+		<!-- Start of WebFreeCounter Code -->
+		How many people/bots saw this page:
+		<a href="https://www.webfreecounter.com/" target="_blank"><img src="https://www.webfreecounter.com/hit.php?id=gvmonnqp&nd=6&style=1" border="0" alt="visitor counter"></a>
+		<!-- End of WebFreeCounter Code -->
+		</h1>
+
+		<h1 id="date">
+		</h1>
+
+		<script>
+		n =  new Date();
+		y = n.getFullYear();
+		m = n.getMonth() + 1;
+		d = n.getDate();
+		document.getElementById("date").innerHTML = "Today is " + m + "/" + d + "/" + y;
+		</script>
+
+		</div>
+
+		<div class="DIV2">
+		<h2 class="normal">Updates 7/18/2021</h2>
+		<p>-I did a bunch of stuff that dosen't work.</p>
+		</div>
+
+		<div class="DIV3">
+
+		<h2>	
+		<img src="https://gamblingz.000webhostapp.com/Images/DIAMOND.png" />	
+		<img src="https://gamblingz.000webhostapp.com/Images/BELL.png" />	
+		<img src="https://gamblingz.000webhostapp.com/Images/CHERRY.png" />!!!Cool Slot Machine Game!!!			
+		<img src="https://gamblingz.000webhostapp.com/Images/DIAMOND.png" />	
+		<img src="https://gamblingz.000webhostapp.com/Images/BELL.png" />	
+		<img src="https://gamblingz.000webhostapp.com/Images/CHERRY.png" />
+		</h2>
+
+		<h2>
+		<img id="SLOT1" src="https://gamblingz.000webhostapp.com/Images/BLIP.png" />
+		<img id="SLOT2" src="https://gamblingz.000webhostapp.com/Images/BLIP.png" />
+		<img id="SLOT3" src="https://gamblingz.000webhostapp.com/Images/BLIP.png" />
+		</h2>
+
+		<button onclick="myFunction()">Roll</button>
+
+		<p id="gemo"></p>
+
+
+		<script>
+		var a = 0;
+		var b = 0;
+		var c = 0;
+		var creds = 10;
+		var Roll = new Audio();
+		Roll.src = "https://gamblingz.000webhostapp.com/Sound Effects/COIN_DROP.wav";
+		var Lose = new Audio();
+		Lose.src = "https://gamblingz.000webhostapp.com/Sound Effects/DEAD.wav";
+		var DING = new Audio();
+		DING.src = "https://gamblingz.000webhostapp.com/Sound Effects/DING.WAV";
+		var Win = new Audio();
+		Win.src = "https://gamblingz.000webhostapp.com/Sound Effects/TADA.WAV";
+
+
+		function myFunction() {
+		Roll.pause();
+		Roll.currentTime = 0;
+		Roll.play();
+		creds = creds - 1
+
+		a = Math.floor(Math.random() * 3) + 1
+		if (a == 1){
+		document.getElementById("SLOT1").src="https://gamblingz.000webhostapp.com/Images/CHERRY.png";
+		} else if (a == 2){
+		document.getElementById("SLOT1").src="https://gamblingz.000webhostapp.com/Images/BELL.png";
+		} else if (a == 3) {
+		document.getElementById("SLOT1").src="https://gamblingz.000webhostapp.com/Images/DIAMOND.png";
+		}
+
+
+		b = Math.floor(Math.random() * 3) + 1
+		if (b == 1){
+		document.getElementById("SLOT2").src="https://gamblingz.000webhostapp.com/Images/CHERRY.png";
+		} else if (b == 2){
+		document.getElementById("SLOT2").src="https://gamblingz.000webhostapp.com/Images/BELL.png";
+		} else if (b == 3) {
+		document.getElementById("SLOT2").src="https://gamblingz.000webhostapp.com/Images/DIAMOND.png";
+		}
+
+		c = Math.floor(Math.random() * 3) + 1
+		if (c == 1){
+		document.getElementById("SLOT3").src="https://gamblingz.000webhostapp.com/Images/CHERRY.png";
+		} else if (c == 2){
+		document.getElementById("SLOT3").src="https://gamblingz.000webhostapp.com/Images/BELL.png";
+		} else if (c == 3) {
+		document.getElementById("SLOT3").src="https://gamblingz.000webhostapp.com/Images/DIAMOND.png";
+		}
+
+	if (a == 1 && b == 1 && c == 1) {
+	DING.pause();
+	DING.currentTime = 0;
+	DING.play();
+	creds = creds + 5
+} else if (a == 2 && b == 2 && c == 2) {
+	DING.pause();
+	DING.currentTime = 0;
+	DING.play();
+	creds = creds + 10
+} else if (a == 3 && b == 3 && c == 3) {
+	DING.pause();
+	DING.currentTime = 0;
+	DING.play();
+	creds = creds + 15
+}
+
+if(creds == 0){
+	Roll.pause();
+	Lose.pause();
+	Lose.currentTime = 0;
+	Lose.play();
+	alert("YOU LOSE THE GAME!!!");
+	creds = 10
+}
+
+if(creds > 50){
+	Roll.pause();
+	Win.pause();
+	Win.currentTime = 0;
+	Win.play();
+	alert("YOU WIN THE GAME!!!");
+	creds = 10
+}
+document.getElementById("Money").innerHTML = "  Your Credits are: " + creds;
+}
+
+	</script>
+	</div>
+
+		<div class="DIV1">
+		<h1>
+		Double or nothing
+		</h1>
+
+
+		<button onclick="DorN()">???Double or nothing???</button>
+
+		<script>
+		var C = 0;
+		function DorN() {
+		C = Math.floor(Math.random() * 2) + 1
+		if (C == 1){
+		alert("NOTHING");
+		}
+		if (C == 2){
+		alert("DOUBLE");
+		}
+
+
+		}	
+		</script>
+
+		</div>
+
+
+
+
+
+
+	<div class="DIV2">
+	<h2 class="normal">
+	<img src="https://gamblingz.000webhostapp.com/Images/ONE_D.png" />
+	!!!DICE ROLLING GAME!!!
+	<img src="https://gamblingz.000webhostapp.com/Images/ONE_D.png" />
+	</h2>
+
+
+	<button onclick="DiceFunction()">Roll</button>
+
+	<img id="Die" src="https://gamblingz.000webhostapp.com/Images/BLIP.png" />
+
+
+	<script>		
+
+
+	var D_Roll = new Audio();
+	D_Roll.src = "https://gamblingz.000webhostapp.com/Sound Effects/DIE_ROLL.mp3";
+	function DiceFunction() {
+	D_Roll.pause();
+	D_Roll.currentTime = 0;
+	D_Roll.play();
+
+	D = Math.floor(Math.random() * 6) + 1
+
+	if (D == 1){
+		document.getElementById("Die").src="https://gamblingz.000webhostapp.com/Images/ONE_D.png";
+	}
+	if (D == 2){
+		document.getElementById("Die").src="https://gamblingz.000webhostapp.com/Images/TWO_D.png";
+	}
+	if (D == 3){
+		document.getElementById("Die").src="https://gamblingz.000webhostapp.com/Images/THREE_D.png";
+	}
+	if (D == 4){
+		document.getElementById("Die").src="https://gamblingz.000webhostapp.com/Images/FOUR_D.png";
+	}
+	if (D == 5){
+		document.getElementById("Die").src="https://gamblingz.000webhostapp.com/Images/FIVE_D.png";
+	}
+	if (D == 6){
+		document.getElementById("Die").src="https://gamblingz.000webhostapp.com/Images/SIX_D.png";
+	}
+
+
+
+
+
+	}
+	</script>
+	</div>
+
+
+	<div class="CLASS4">
+	<h2 class="normal">Horrible Music</h2>
+
+
+	<img src="https://gamblingz.000webhostapp.com/Images/music.png" />
+	<audio controls>
+    <source src="https://gamblingz.000webhostapp.com/Music/GAME_THEME.wav" type="audio/wav">
+    </audio>
+	<img src="https://gamblingz.000webhostapp.com/Images/music.png" />
+	</div>
+
+
+	</body>
+</html>
